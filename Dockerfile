@@ -6,7 +6,7 @@ COPY . .
 
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go install \
   -mod=vendor \
-  ./...
+  ./cmd/...
 
 ############# base               #############
 FROM alpine:3.11.2 AS base
