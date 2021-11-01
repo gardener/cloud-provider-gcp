@@ -976,13 +976,13 @@ k8s.io/kube-openapi/pkg/schemaconv
 k8s.io/kube-openapi/pkg/util
 k8s.io/kube-openapi/pkg/util/proto
 k8s.io/kube-openapi/pkg/validation/spec
-# k8s.io/kubernetes v1.22.0
+# k8s.io/kubernetes v1.22.3
 ## explicit
 k8s.io/kubernetes/pkg/features
 # k8s.io/legacy-cloud-providers v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/legacy-cloud-providers v0.0.0-20210804175619-c2b5237ccd9c
 ## explicit
 k8s.io/legacy-cloud-providers/gce
-# k8s.io/utils v0.0.0-20210707171843-4b05e18ac7d9
+# k8s.io/utils v0.0.0-20210819203725-bdf08cb9a70a
 k8s.io/utils/buffer
 k8s.io/utils/integer
 k8s.io/utils/internal/third_party/forked/golang/golang-lru
@@ -1026,7 +1026,7 @@ sigs.k8s.io/yaml
 # k8s.io/legacy-cloud-providers => k8s.io/kubernetes/staging/src/k8s.io/legacy-cloud-providers v0.0.0-20210804175619-c2b5237ccd9c
 # k8s.io/metrics => k8s.io/kubernetes/staging/src/k8s.io/metrics v0.0.0-20210804175619-c2b5237ccd9c
 # k8s.io/mount-utils => k8s.io/kubernetes/staging/src/k8s.io/mount-utils v0.0.0-20210804175619-c2b5237ccd9c
+# k8s.io/pod-security-admission => k8s.io/pod-security-admission v0.22.0
 # k8s.io/sample-apiserver => k8s.io/kubernetes/staging/src/k8s.io/sample-apiserver v0.0.0-20210804175619-c2b5237ccd9c
 # k8s.io/sample-cli-plugin => k8s.io/kubernetes/staging/src/k8s.io/sample-cli-plugin v0.0.0-20210804175619-c2b5237ccd9c
 # k8s.io/sample-controller => k8s.io/kubernetes/staging/src/k8s.io/sample-controller v0.0.0-20210804175619-c2b5237ccd9c
-# k8s.io/pod-security-admission => k8s.io/pod-security-admission v0.22.0
