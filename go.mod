@@ -28,7 +28,7 @@ replace (
 	k8s.io/legacy-cloud-providers => k8s.io/kubernetes/staging/src/k8s.io/legacy-cloud-providers v0.0.0-20220921121142-c6939792865e
 	k8s.io/metrics => k8s.io/kubernetes/staging/src/k8s.io/metrics v0.0.0-20220921121142-c6939792865e
 	k8s.io/mount-utils => k8s.io/kubernetes/staging/src/k8s.io/mount-utils v0.0.0-20220921121142-c6939792865e
-	k8s.io/pod-security-admission => k8s.io/pod-security-admission v0.23.10
+	k8s.io/pod-security-admission => k8s.io/pod-security-admission v0.23.12
 	k8s.io/sample-apiserver => k8s.io/kubernetes/staging/src/k8s.io/sample-apiserver v0.0.0-20220921121142-c6939792865e
 	k8s.io/sample-cli-plugin => k8s.io/kubernetes/staging/src/k8s.io/sample-cli-plugin v0.0.0-20220921121142-c6939792865e
 	k8s.io/sample-controller => k8s.io/kubernetes/staging/src/k8s.io/sample-controller v0.0.0-20220921121142-c6939792865e
