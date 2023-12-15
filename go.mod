@@ -3,8 +3,8 @@ module k8s.io/cloud-provider-gcp
 go 1.20
 
 replace (
-	// these replacements are pinned to a commit which is the sha associated with the 1.27.6 tag on k/k
-	// as you cannot pin them to v1.27.6 directly
+	// these replacements are pinned to a commit which is the sha associated with the 1.27.8 tag on k/k
+	// as you cannot pin them to v1.27.8 directly
 	k8s.io/api => k8s.io/kubernetes/staging/src/k8s.io/api v0.0.0-20231026195421-2652f51e2a56
 	k8s.io/apiextensions-apiserver => k8s.io/kubernetes/staging/src/k8s.io/apiextensions-apiserver v0.0.0-20231026195421-2652f51e2a56
 	k8s.io/apimachinery => k8s.io/kubernetes/staging/src/k8s.io/apimachinery v0.0.0-20231026195421-2652f51e2a56
