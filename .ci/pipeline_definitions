@@ -1,4 +1,5 @@
 cloud-provider-gcp:
+  render_pipeline: no
   template: 'default'
   base_definition:
     repo: ~
