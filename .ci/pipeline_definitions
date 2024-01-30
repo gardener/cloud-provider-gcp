@@ -3,28 +3,36 @@ cloud-provider-gcp:
     traits:
       version:
         preprocess: 'inject-commit-hash'
+      component_descriptor:
+        ocm_repository: europe-docker.pkg.dev/gardener-project/snapshots
       publish:
         dockerimages:
           cloud-provider-gcp:
-            image: 'eu.gcr.io/gardener-project/kubernetes/cloud-provider-gcp'
+            image: europe-docker.pkg.dev/gardener-project/snapshots/kubernetes/cloud-provider-gcp
             dockerfile: 'Dockerfile'
             target: cloud-provider-gcp
   jobs:
     head-update:
       traits:
         draft_release: ~
+        component_descriptor:
+          ocm_repository: europe-docker.pkg.dev/gardener-project/snapshots
     pull-request:
       traits:
         pull-request: ~
-        component_descriptor: ~
+        component_descriptor:
+          ocm_repository_mappings:
+            - repository: europe-docker.pkg.dev/gardener-project/releases
     release:
       traits:
         version:
           preprocess: 'finalize'
         release:
           nextversion: 'bump_minor'
-        component_descriptor: ~
+        component_descriptor:
+          ocm_repository: europe-docker.pkg.dev/gardener-project/releases
         publish:
           dockerimages:
             cloud-provider-gcp:
               tag_as_latest: true
+              image: europe-docker.pkg.dev/gardener-project/releases/kubernetes/cloud-provider-gcp
