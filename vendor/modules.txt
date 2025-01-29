@@ -323,6 +323,7 @@ go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc/internal/retry
 ## explicit; go 1.20
 go.opentelemetry.io/otel/metric
 go.opentelemetry.io/otel/metric/embedded
+go.opentelemetry.io/otel/metric/noop
 # go.opentelemetry.io/otel/sdk v1.19.0
 ## explicit; go 1.20
 go.opentelemetry.io/otel/sdk
@@ -584,7 +585,7 @@ gopkg.in/yaml.v2
 # gopkg.in/yaml.v3 v3.0.1
 ## explicit
 gopkg.in/yaml.v3
-# k8s.io/api v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/api v0.0.0-20240911201952-114a1f58037b
+# k8s.io/api v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/api v0.0.0-20250115143342-9a58e9398d4a
 ## explicit; go 1.21
 k8s.io/api/admission/v1
 k8s.io/api/admission/v1beta1
@@ -640,10 +641,10 @@ k8s.io/api/scheduling/v1beta1
 k8s.io/api/storage/v1
 k8s.io/api/storage/v1alpha1
 k8s.io/api/storage/v1beta1
-# k8s.io/apiextensions-apiserver v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/apiextensions-apiserver v0.0.0-20240911201952-114a1f58037b
+# k8s.io/apiextensions-apiserver v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/apiextensions-apiserver v0.0.0-20250115143342-9a58e9398d4a
 ## explicit; go 1.21
 k8s.io/apiextensions-apiserver/pkg/features
-# k8s.io/apimachinery v0.29.9 => k8s.io/kubernetes/staging/src/k8s.io/apimachinery v0.0.0-20240911201952-114a1f58037b
+# k8s.io/apimachinery v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/apimachinery v0.0.0-20250115143342-9a58e9398d4a
 ## explicit; go 1.21
 k8s.io/apimachinery/pkg/api/equality
 k8s.io/apimachinery/pkg/api/errors
@@ -703,7 +704,7 @@ k8s.io/apimachinery/pkg/version
 k8s.io/apimachinery/pkg/watch
 k8s.io/apimachinery/third_party/forked/golang/json
 k8s.io/apimachinery/third_party/forked/golang/reflect
-# k8s.io/apiserver v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/apiserver v0.0.0-20240911201952-114a1f58037b
+# k8s.io/apiserver v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/apiserver v0.0.0-20250115143342-9a58e9398d4a
 ## explicit; go 1.21
 k8s.io/apiserver/pkg/admission
 k8s.io/apiserver/pkg/admission/cel
@@ -851,7 +852,7 @@ k8s.io/apiserver/plugin/pkg/audit/truncate
 k8s.io/apiserver/plugin/pkg/audit/webhook
 k8s.io/apiserver/plugin/pkg/authenticator/token/webhook
 k8s.io/apiserver/plugin/pkg/authorizer/webhook
-# k8s.io/client-go v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/client-go v0.0.0-20240911201952-114a1f58037b
+# k8s.io/client-go v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/client-go v0.0.0-20250115143342-9a58e9398d4a
 ## explicit; go 1.21
 k8s.io/client-go/applyconfigurations/admissionregistration/v1
 k8s.io/client-go/applyconfigurations/admissionregistration/v1alpha1
@@ -1165,7 +1166,7 @@ k8s.io/client-go/util/homedir
 k8s.io/client-go/util/keyutil
 k8s.io/client-go/util/retry
 k8s.io/client-go/util/workqueue
-# k8s.io/cloud-provider v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/cloud-provider v0.0.0-20240911201952-114a1f58037b
+# k8s.io/cloud-provider v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/cloud-provider v0.0.0-20250115143342-9a58e9398d4a
 ## explicit; go 1.21
 k8s.io/cloud-provider
 k8s.io/cloud-provider/api
@@ -1189,7 +1190,7 @@ k8s.io/cloud-provider/service/helpers
 k8s.io/cloud-provider/volume
 k8s.io/cloud-provider/volume/errors
 k8s.io/cloud-provider/volume/helpers
-# k8s.io/component-base v0.29.9 => k8s.io/kubernetes/staging/src/k8s.io/component-base v0.0.0-20240911201952-114a1f58037b
+# k8s.io/component-base v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/component-base v0.0.0-20250115143342-9a58e9398d4a
 ## explicit; go 1.21
 k8s.io/component-base/cli/flag
 k8s.io/component-base/cli/globalflag
@@ -1220,10 +1221,10 @@ k8s.io/component-base/tracing
 k8s.io/component-base/tracing/api/v1
 k8s.io/component-base/version
 k8s.io/component-base/version/verflag
-# k8s.io/component-helpers v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/component-helpers v0.0.0-20240911201952-114a1f58037b
+# k8s.io/component-helpers v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/component-helpers v0.0.0-20250115143342-9a58e9398d4a
 ## explicit; go 1.21
 k8s.io/component-helpers/node/util
-# k8s.io/controller-manager v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/controller-manager v0.0.0-20240911201952-114a1f58037b
+# k8s.io/controller-manager v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/controller-manager v0.0.0-20250115143342-9a58e9398d4a
 ## explicit; go 1.21
 k8s.io/controller-manager/app
 k8s.io/controller-manager/config
@@ -1252,7 +1253,7 @@ k8s.io/klog/v2/internal/dbg
 k8s.io/klog/v2/internal/serialize
 k8s.io/klog/v2/internal/severity
 k8s.io/klog/v2/internal/sloghandler
-# k8s.io/kms v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/kms v0.0.0-20240911201952-114a1f58037b
+# k8s.io/kms v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/kms v0.0.0-20250115143342-9a58e9398d4a
 ## explicit; go 1.21
 k8s.io/kms/apis/v1beta1
 k8s.io/kms/apis/v2
@@ -1279,10 +1280,10 @@ k8s.io/kube-openapi/pkg/validation/errors
 k8s.io/kube-openapi/pkg/validation/spec
 k8s.io/kube-openapi/pkg/validation/strfmt
 k8s.io/kube-openapi/pkg/validation/strfmt/bson
-# k8s.io/kubernetes v1.29.9
+# k8s.io/kubernetes v1.29.13
 ## explicit; go 1.21
 k8s.io/kubernetes/pkg/features
-# k8s.io/legacy-cloud-providers v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/legacy-cloud-providers v0.0.0-20240911201952-114a1f58037b
+# k8s.io/legacy-cloud-providers v0.0.0 => k8s.io/kubernetes/staging/src/k8s.io/legacy-cloud-providers v0.0.0-20250115143342-9a58e9398d4a
 ## explicit; go 1.21
 k8s.io/legacy-cloud-providers/gce
 # k8s.io/utils v0.0.0-20230726121419-3b25d923346b
@@ -1320,31 +1321,31 @@ sigs.k8s.io/structured-merge-diff/v4/value
 # sigs.k8s.io/yaml v1.3.0
 ## explicit; go 1.12
 sigs.k8s.io/yaml
-# k8s.io/api => k8s.io/kubernetes/staging/src/k8s.io/api v0.0.0-20240911201952-114a1f58037b
-# k8s.io/apiextensions-apiserver => k8s.io/kubernetes/staging/src/k8s.io/apiextensions-apiserver v0.0.0-20240911201952-114a1f58037b
-# k8s.io/apimachinery => k8s.io/kubernetes/staging/src/k8s.io/apimachinery v0.0.0-20240911201952-114a1f58037b
-# k8s.io/apiserver => k8s.io/kubernetes/staging/src/k8s.io/apiserver v0.0.0-20240911201952-114a1f58037b
-# k8s.io/cli-runtime => k8s.io/kubernetes/staging/src/k8s.io/cli-runtime v0.0.0-20240911201952-114a1f58037b
-# k8s.io/client-go => k8s.io/kubernetes/staging/src/k8s.io/client-go v0.0.0-20240911201952-114a1f58037b
-# k8s.io/cloud-provider => k8s.io/kubernetes/staging/src/k8s.io/cloud-provider v0.0.0-20240911201952-114a1f58037b
-# k8s.io/cluster-bootstrap => k8s.io/kubernetes/staging/src/k8s.io/cluster-bootstrap v0.0.0-20240911201952-114a1f58037b
-# k8s.io/code-generator => k8s.io/kubernetes/staging/src/k8s.io/code-generator v0.0.0-20240911201952-114a1f58037b
-# k8s.io/component-base => k8s.io/kubernetes/staging/src/k8s.io/component-base v0.0.0-20240911201952-114a1f58037b
-# k8s.io/component-helpers => k8s.io/kubernetes/staging/src/k8s.io/component-helpers v0.0.0-20240911201952-114a1f58037b
-# k8s.io/controller-manager => k8s.io/kubernetes/staging/src/k8s.io/controller-manager v0.0.0-20240911201952-114a1f58037b
-# k8s.io/cri-api => k8s.io/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20240911201952-114a1f58037b
-# k8s.io/csi-translation-lib => k8s.io/kubernetes/staging/src/k8s.io/csi-translation-lib v0.0.0-20240911201952-114a1f58037b
-# k8s.io/kms => k8s.io/kubernetes/staging/src/k8s.io/kms v0.0.0-20240911201952-114a1f58037b
-# k8s.io/kube-aggregator => k8s.io/kubernetes/staging/src/k8s.io/kube-aggregator v0.0.0-20240911201952-114a1f58037b
-# k8s.io/kube-controller-manager => k8s.io/kubernetes/staging/src/k8s.io/kube-controller-manager v0.0.0-20240911201952-114a1f58037b
-# k8s.io/kube-proxy => k8s.io/kubernetes/staging/src/k8s.io/kube-proxy v0.0.0-20240911201952-114a1f58037b
-# k8s.io/kube-scheduler => k8s.io/kubernetes/staging/src/k8s.io/kube-scheduler v0.0.0-20240911201952-114a1f58037b
-# k8s.io/kubectl => k8s.io/kubernetes/staging/src/k8s.io/kubectl v0.0.0-20240911201952-114a1f58037b
-# k8s.io/kubelet => k8s.io/kubernetes/staging/src/k8s.io/kubelet v0.0.0-20240911201952-114a1f58037b
-# k8s.io/legacy-cloud-providers => k8s.io/kubernetes/staging/src/k8s.io/legacy-cloud-providers v0.0.0-20240911201952-114a1f58037b
-# k8s.io/metrics => k8s.io/kubernetes/staging/src/k8s.io/metrics v0.0.0-20240911201952-114a1f58037b
-# k8s.io/mount-utils => k8s.io/kubernetes/staging/src/k8s.io/mount-utils v0.0.0-20240911201952-114a1f58037b
-# k8s.io/pod-security-admission => k8s.io/kubernetes/staging/src/k8s.io/pod-security-admission v0.0.0-20240911201952-114a1f58037b
-# k8s.io/sample-apiserver => k8s.io/kubernetes/staging/src/k8s.io/sample-apiserver v0.0.0-20240911201952-114a1f58037b
-# k8s.io/sample-cli-plugin => k8s.io/kubernetes/staging/src/k8s.io/sample-cli-plugin v0.0.0-20240911201952-114a1f58037b
-# k8s.io/sample-controller => k8s.io/kubernetes/staging/src/k8s.io/sample-controller v0.0.0-20240911201952-114a1f58037b
+# k8s.io/api => k8s.io/kubernetes/staging/src/k8s.io/api v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/apiextensions-apiserver => k8s.io/kubernetes/staging/src/k8s.io/apiextensions-apiserver v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/apimachinery => k8s.io/kubernetes/staging/src/k8s.io/apimachinery v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/apiserver => k8s.io/kubernetes/staging/src/k8s.io/apiserver v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/cli-runtime => k8s.io/kubernetes/staging/src/k8s.io/cli-runtime v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/client-go => k8s.io/kubernetes/staging/src/k8s.io/client-go v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/cloud-provider => k8s.io/kubernetes/staging/src/k8s.io/cloud-provider v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/cluster-bootstrap => k8s.io/kubernetes/staging/src/k8s.io/cluster-bootstrap v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/code-generator => k8s.io/kubernetes/staging/src/k8s.io/code-generator v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/component-base => k8s.io/kubernetes/staging/src/k8s.io/component-base v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/component-helpers => k8s.io/kubernetes/staging/src/k8s.io/component-helpers v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/controller-manager => k8s.io/kubernetes/staging/src/k8s.io/controller-manager v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/cri-api => k8s.io/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/csi-translation-lib => k8s.io/kubernetes/staging/src/k8s.io/csi-translation-lib v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/kms => k8s.io/kubernetes/staging/src/k8s.io/kms v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/kube-aggregator => k8s.io/kubernetes/staging/src/k8s.io/kube-aggregator v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/kube-controller-manager => k8s.io/kubernetes/staging/src/k8s.io/kube-controller-manager v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/kube-proxy => k8s.io/kubernetes/staging/src/k8s.io/kube-proxy v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/kube-scheduler => k8s.io/kubernetes/staging/src/k8s.io/kube-scheduler v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/kubectl => k8s.io/kubernetes/staging/src/k8s.io/kubectl v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/kubelet => k8s.io/kubernetes/staging/src/k8s.io/kubelet v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/legacy-cloud-providers => k8s.io/kubernetes/staging/src/k8s.io/legacy-cloud-providers v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/metrics => k8s.io/kubernetes/staging/src/k8s.io/metrics v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/mount-utils => k8s.io/kubernetes/staging/src/k8s.io/mount-utils v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/pod-security-admission => k8s.io/kubernetes/staging/src/k8s.io/pod-security-admission v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/sample-apiserver => k8s.io/kubernetes/staging/src/k8s.io/sample-apiserver v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/sample-cli-plugin => k8s.io/kubernetes/staging/src/k8s.io/sample-cli-plugin v0.0.0-20250115143342-9a58e9398d4a
+# k8s.io/sample-controller => k8s.io/kubernetes/staging/src/k8s.io/sample-controller v0.0.0-20250115143342-9a58e9398d4a
