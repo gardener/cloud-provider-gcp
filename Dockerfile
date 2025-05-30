@@ -1,5 +1,5 @@
 ############# builder            #############
-FROM golang:1.22.11 AS builder
+FROM golang:1.22.12 AS builder
 
 WORKDIR /go/src/github.com/gardener/cloud-provider-gcp
 COPY . .
